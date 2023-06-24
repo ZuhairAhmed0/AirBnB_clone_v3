@@ -1,0 +1,249 @@
+<!-- HTML page that displays a header, a footer, 
+    a filter box (dropdown list) and the result of the search. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>AirBnB_clone</title>
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" href="styles/4-common.css">
+	<link rel="stylesheet" href="styles/3-header.css">
+	<link rel="stylesheet" href="styles/3-footer.css">
+	<link rel="stylesheet" href="styles/6-filters.css">
+	<link rel="stylesheet" href="styles/100-places.css">
+</head>
+
+<body>
+	<!-- ========== Start Header ========== -->
+	<header>
+		<img src="images/logo.png" alt="logo">
+	</header>
+	<!-- ========== End Header ========== -->
+
+	<!-- ========== Start container ========== -->
+	<div class="container">
+		<!-- ========== Start Filters ========== -->
+		<section class="filters">
+			<div class="locations">
+				<h3>States</h3>
+				<h4>New York/Virgina...</h4>
+				<div class="popover">
+					<h2>New York:</h2>
+					<ul>
+						<li>Buffalo</li>
+						<li>New York City</li>
+					</ul>
+					<h2>Virginia:</h2>
+					<ul>
+						<li>Charlottesville</li>
+						<li>Richmond</li>
+					</ul>
+				</div>
+			</div>
+			<div class="amenities">
+				<h3>Amenities</h3>
+				<h4>ie. Laundry/Internet...</h4>
+				<ul class="popover">
+					<li>Internet</li>
+					<li>TV</li>
+					<li>Kitchen</li>
+					<li>Iron</li>
+				</ul>
+			</div>
+			<button>Search</button>
+		</section>
+		<!-- ========== End Filters ========== -->
+		<!-- ========== Start Places ========== -->
+		<section class="places">
+			<h1>Places</h1>
+			<div>
+				<article>
+					<h2>My home</h2>
+					<div class="price_by_night">$80</div>
+					<div class="information">
+						<div class="max_guest">
+							<img src="images/icon_group.png" alt="guest">
+							3 Guest
+						</div>
+						<div class="number_rooms">
+							<img src="images/icon_bed.png" alt="room">
+							2 Rooms
+						</div>
+						<div class="number_bathrooms">
+							<img src="images/icon_bath.png" alt="bathroom">
+							1 Bathrooms
+						</div>
+					</div>
+					<div class="user"><strong>Owner: </strong>Zuhair Ahmed</div>
+					<div class="description">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+						consectetur aliquam qui quas. Mollitia maiores accusamus quia
+						similique sed dolorem modi, tenetur accusantium optio odit sunt
+						eaque minus, veritatis incidunt!
+					</div>
+
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li>
+								<img src="images/icon_tv.png" alt="TV">
+								TV
+							</li>
+							<li>
+								<img src="images/icon_wifi.png" alt="Wifi">
+								Wifi
+							</li>
+							<li>
+								<img src="images/icon_pets.png" alt="pets">
+								Pet friendly
+							</li>
+						</ul>
+					</div>
+
+					<div class="reviews">
+						<h2>2 Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Bob Dylan the 27th January 2017</h3>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Quos voluptatum optio, iusto explicabo eius sequi qui
+									molestias saepe voluptate dicta?
+								</p>
+							</li>
+							<li>
+								<h3>From John the 16th January 2023</h3>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Quos voluptatum optio, iusto explicabo eius sequi qui
+									molestias saepe voluptate dicta?
+								</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>Tiny house</h2>
+					<div class="price_by_night">$199</div>
+					<div class="information">
+						<div class="max_guest">
+							<img src="images/icon_group.png" alt="guest">
+							5 Guest
+						</div>
+						<div class="number_rooms">
+							<img src="images/icon_bed.png" alt="room">
+							7 Rooms
+						</div>
+						<div class="number_bathrooms">
+							<img src="images/icon_bath.png" alt="bathroom">
+							3 Bathrooms
+						</div>
+					</div>
+					<div class="user"><strong>Owner: </strong>Zuhair Ahmed</div>
+					<div class="description">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+						consectetur aliquam qui quas. Mollitia maiores accusamus quia
+						similique sed dolorem modi, tenetur accusantium optio odit sunt
+						eaque minus, veritatis incidunt!
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li>
+								<img src="images/icon_tv.png" alt="TV">
+								TV
+							</li>
+							<li>
+								<img src="images/icon_pets.png" alt="pets">
+								Pet friendly
+							</li>
+						</ul>
+					</div>
+
+					<div class="reviews">
+						<h2>2 Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Bob Dylan the 27th January 2017</h3>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Quos voluptatum optio, iusto explicabo eius sequi qui
+									molestias saepe voluptate dicta?
+								</p>
+							</li>
+							<li>
+								<h3>From John the 16th January 2023</h3>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Quos voluptatum optio, iusto explicabo eius sequi qui
+									molestias saepe voluptate dicta?
+								</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>A suite</h2>
+					<div class="price_by_night">$90</div>
+					<div class="information">
+						<div class="max_guest">
+							<img src="images/icon_group.png" alt="guest">
+							2 Guest
+						</div>
+						<div class="number_rooms">
+							<img src="images/icon_bed.png" alt="room">
+							4 Rooms
+						</div>
+						<div class="number_bathrooms">
+							<img src="images/icon_bath.png" alt="bathroom">
+							2 Bathrooms
+						</div>
+					</div>
+					<div class="user"><strong>Owner: </strong>Zuhair Ahmed</div>
+					<div class="description">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+						consectetur aliquam qui quas. Mollitia maiores accusamus quia
+						similique sed dolorem modi, tenetur accusantium optio odit sunt
+						eaque minus, veritatis incidunt!
+					</div>
+
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li>
+								<img src="images/icon_tv.png" alt="TV">
+								TV
+							</li>
+							<li>
+								<img src="images/icon_wifi.png" alt="Wifi">
+								Wifi
+							</li>
+						</ul>
+					</div>
+
+					<div class="reviews">
+						<h2>1 Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Bob Dylan the 27th January 2017</h3>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Quos voluptatum optio, iusto explicabo eius sequi qui
+									molestias saepe voluptate dicta?
+								</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
+		<!-- ========== End Places ========== -->
+	</div>
+	<!-- ========== End container ========== -->
+
+	<!-- ========== Start Footer ========== -->
+	<footer>Best School</footer>
+	<!-- ========== End Footer ========== -->
+</body>
+
+</html>
