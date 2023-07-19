@@ -86,14 +86,33 @@ class HBNBCommand(cmd.Cmd):
         """Usage: create <class>
         Create a new class instance and print its id.
         """
-        argl = parse(arg)
-        if len(argl) == 0:
+        try:
+            if not arg:
+                raise SyntaxError()
+            my_list = arg.split(" ")
+
+            kwargs = {}
+            for index in range(1, len(my_list)):
+                key, value = tuple(my_list[index].split("="))
+                if value[0] == '"':
+                    value = value.strip('"').replace("_", " ")
+                else:
+                    try:
+                        value = eval(value)
+                    except (SyntaxError, NameError):
+                        continue
+                kwargs[key] = value
+            if kwargs == {}:
+                obj = eval(my_list[0])()
+            else:
+                obj = eval(my_list[0])(**kwargs)
+                storage.new(obj)
+            print(obj.id)
+            obj.save()
+        except SyntaxError:
             print("** class name missing **")
-        elif argl[0] not in HBNBCommand.__classes:
+        except NameError:
             print("** class doesn't exist **")
-        else:
-            print(eval(argl[0])().id)
-            storage.save()
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
