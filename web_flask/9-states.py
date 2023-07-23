@@ -19,9 +19,14 @@ def states(state_id=None):
     states = storage.all("State")
     if state_id is not None:
         state_id = 'State.' + state_id
-    return render_template("7-states_list.html", states=states, state_id=state_id)
+    return render_template("9-states.html", states=states, state_id=state_id)
+
 
 @app.teardown_appcontext
 def teardown_db():
     """ close the storage on teardown """
     storeage.close()
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')

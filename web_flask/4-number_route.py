@@ -7,26 +7,31 @@ that starts a Flask web application
 from flask import Flask
 app = Flask(__name__)
 
+
 @app.route("/", strict_slashes=False)
 def index():
     """ display “Hello HBNB!” """
     return "Hello HBNB!"
+
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """ display “HBNB” """
     return "HBNB"
 
+
 @app.route("/c/<text>", strict_slashes=False)
 def c_route(text="is cool"):
     """ display “C ” followed by the value of the text variable """
     return "C " + text.replace("-", " ")
+
 
 @app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_route(text="is cool"):
     """ display “n is a number” only if n is an integer """
     return "Python " + text.reaplce("-", " ")
+
 
 @app.route("/number/<int:n>", strict_slashes=False)
 def number_route(n):
