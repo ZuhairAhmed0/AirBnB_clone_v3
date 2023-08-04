@@ -68,7 +68,7 @@ class FileStorage:
     def get(self, cls, id):
         """ number of objects in storage matching the given class """
         if cls and id:
-            fetch = "{}.{}".format(cks, id)
+            fetch = "{}.{}".format(cls, id)
             all_obj = self.all(cls)
             return all_obj.get(fetch)
         return None
