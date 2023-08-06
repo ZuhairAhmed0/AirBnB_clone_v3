@@ -5,10 +5,17 @@ header {
 	width: 100%;
 	border-bottom: 1px solid #CCC;
 	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header img {
 	display: inline-block;
 	margin-left: 20px;
 	vertical-align: center;
+}
+
+.available {
+	background-color: #ff545f
 }
